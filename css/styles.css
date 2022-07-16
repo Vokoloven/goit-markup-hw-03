@@ -160,6 +160,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
   background-color: var(--button-color);
@@ -238,8 +239,16 @@ body {
 }
 
 .work .list {
+  display: flex;
+  justify-content: center;
+
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
+}
+
+.work .items:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work .img {
@@ -267,6 +276,8 @@ body {
 }
 
 .team .team-list {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -274,6 +285,13 @@ body {
 .team .team-line {
   background-color: var(--white-color);
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team .team-line:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .team-header {
