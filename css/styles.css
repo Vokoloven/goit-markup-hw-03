@@ -8,6 +8,7 @@
   --second-bcgrnd-color: #2f303a;
   --third-bcgrnd-color: #f5f4fa;
   --rgba-color: rgba(255, 255, 255, 0.6);
+  --border-header: #ececec;
 }
 /* Глобальные стили в Body */
 body {
@@ -40,14 +41,22 @@ body {
   color: var(--add-font-color);
 }
 
+.main .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
-  outline: 2px solid salmon;
 }
 
 .header-logo {
+  display: block;
+  padding-left: 215px;
+  margin-right: 93px;
+
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -62,6 +71,7 @@ body {
 
 .header-list {
   display: flex;
+  margin-right: 331px;
 
   margin-top: 0;
   margin-bottom: 0;
@@ -73,9 +83,12 @@ body {
   letter-spacing: 0.02em;
 }
 
+.main .items:not(:last-child) {
+  margin-right: 50px;
+}
+
 .main {
   display: flex;
-  align-items: center;
 }
 
 .nav {
@@ -85,10 +98,15 @@ body {
 
 .main .goto-list {
   display: flex;
-
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 215px;
   padding: 0;
+}
+
+.main .address:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-list .link:hover,
@@ -114,8 +132,9 @@ body {
   width: 1600px;
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  width: 696px;
+
+  margin: 0 auto 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -161,6 +180,8 @@ body {
 }
 
 .feature .feature-title {
+  width: 270px;
+
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -172,12 +193,23 @@ body {
 }
 
 .feature .feature-list {
+  display: flex;
+
+  margin-left: 215px;
+  margin-right: 215px;
+
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
 
+.feature .items:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature .feature-paragraph {
+  width: 270px;
+
   margin-top: 0;
   margin-bottom: 0;
 
@@ -331,11 +363,33 @@ body {
 }
 
 /* Стили для портфолио */
+.filter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter .filter-list {
+  /* display: flex; */
+  margin-top: 0;
+  padding: 0;
+}
 .filter-button {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 8px 22px;
+  min-width: 73px;
+  text-align: center;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+
+  border: transparent;
+  border-radius: 4px;
   background-color: var(--third-bcgrnd-color);
   cursor: pointer;
 }
@@ -347,13 +401,25 @@ body {
 .filter .filter-search {
   background-color: var(--white-color);
 }
+
+.filter .img {
+  display: block;
+  margin: 0;
+}
+
 .filter .filter-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .filter .filter-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
