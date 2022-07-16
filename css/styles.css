@@ -1,0 +1,212 @@
+:root {
+  --main-bcgrnd-color: #e5e5e5;
+  --main-font-color: #212121;
+  --button-color: #2196f3;
+  --add-font-color: #000000;
+  --paragraph-color: #757575;
+  --white-color: #ffffff;
+  --second-bcgrnd-color: #2f303a;
+  --third-bcgrnd-color: #f5f4fa;
+  --rgba-color: rgba(255, 255, 255, 0.6);
+}
+/* Глобальные стили в Body */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-bcgrnd-color);
+  color: var(--main-font-color);
+}
+/* Отключение точки рядом в списках */
+.list {
+  list-style: none;
+  font-style: normal;
+}
+/* Скрываем заголовок которого нет на макете */
+.hiden-title {
+  display: none;
+}
+.header {
+  background-color: var(--white-color);
+}
+/* Удаляем подчеркивание в ссылках */
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--add-font-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--add-font-colour);
+}
+.header-logo-web {
+  color: var(--button-color);
+}
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.header-list .link:hover,
+.header-list .link:focus {
+  color: var(--button-color);
+}
+.header .studio,
+.header .portfolio {
+  color: var(--button-color);
+}
+.header-list .contact {
+  color: var(--paragraph-color);
+}
+.hero {
+  background-color: var(--second-bcgrnd-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-button {
+  background-color: var(--button-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.hero .hero-button:hover,
+.hero .hero-button:focus {
+  color: var(--add-font-color);
+}
+.feature .feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature .feature-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+}
+.work .work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team {
+  background-color: var(--third-bcgrnd-color);
+}
+.team .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team .team-line {
+  background-color: var(--white-color);
+}
+.team .team-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team .team-garagraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+}
+.footer {
+  background-color: var(--second-bcgrnd-color);
+}
+
+.footer .footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer .footer-logo-web {
+  color: var(--button-color);
+}
+.footer .footer-link,
+.footer .footer-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer .footer-link {
+  color: var(--rgba-color);
+}
+
+.footer .footer-link:hover,
+.footer .footer-adress:hover,
+.footer .footer-link:focus,
+.footer .footer-adress:focus {
+  color: var(--button-color);
+}
+/* Стили для портфолио */
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--third-bcgrnd-color);
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--button-color);
+}
+.filter .filter-search {
+  background-color: var(--white-color);
+}
+.filter .filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.filter .filter-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+}
