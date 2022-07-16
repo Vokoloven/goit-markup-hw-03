@@ -87,8 +87,10 @@ body {
   margin-right: 50px;
 }
 
-.main {
+.header .main {
   display: flex;
+
+  border-bottom: 1px solid var(--border-header);
 }
 
 .nav {
