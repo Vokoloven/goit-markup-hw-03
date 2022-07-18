@@ -29,6 +29,7 @@ body {
   background-color: var(--white-color);
   margin-left: auto;
   margin-right: auto;
+  width: 1600px;
 }
 /* Удаляем подчеркивание в ссылках */
 .link {
@@ -125,7 +126,7 @@ body {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1600px;
 }
 .hero-title {
   width: 696px;
@@ -173,7 +174,7 @@ body {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1600px;
 }
 
 .feature .feature-title {
@@ -220,7 +221,7 @@ body {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1600px;
 }
 
 .work .work-title {
@@ -256,7 +257,7 @@ body {
   background-color: var(--third-bcgrnd-color);
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -321,7 +322,7 @@ body {
   background-color: var(--second-bcgrnd-color);
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
