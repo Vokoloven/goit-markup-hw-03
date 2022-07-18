@@ -13,7 +13,7 @@
 /* Глобальные стили в Body */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--main-bcgrnd-color);
+  /* background-color: var(--main-bcgrnd-color); */
   color: var(--main-font-color);
 }
 /* Отключение точки рядом в списках */
@@ -29,7 +29,6 @@ body {
   background-color: var(--white-color);
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
 }
 /* Удаляем подчеркивание в ссылках */
 .link {
@@ -52,11 +51,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .nav .header-logo {
   display: block;
   margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   font-family: "Raleway";
   font-weight: 700;
@@ -72,7 +75,6 @@ body {
 
 .header-list {
   display: flex;
-  margin-left: 93px;
   padding: 0;
 
   font-weight: 500;
@@ -126,7 +128,6 @@ body {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
 }
 .hero-title {
   width: 696px;
@@ -174,7 +175,6 @@ body {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
 }
 
 .feature .feature-title {
@@ -218,7 +218,6 @@ body {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
 }
 
 .work .work-title {
@@ -254,7 +253,6 @@ body {
   background-color: var(--third-bcgrnd-color);
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -319,7 +317,6 @@ body {
   background-color: var(--second-bcgrnd-color);
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -327,7 +324,7 @@ body {
 .footer .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
 
   font-family: "Raleway";
   font-weight: 700;
@@ -341,9 +338,9 @@ body {
   color: var(--button-color);
 }
 
-.footer .list {
+/* .footer .list {
   margin-left: 215px;
-}
+} */
 
 .footer .footer-link,
 .footer .footer-adress {
@@ -378,7 +375,6 @@ body {
 .filter {
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -388,7 +384,7 @@ body {
   margin-top: 0;
   padding: 0;
   margin-bottom: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter .result-search {
@@ -435,7 +431,11 @@ body {
 .filter .filter-search {
   background-color: var(--white-color);
   padding-bottom: 20px;
-  /* width: calc((100% - 60px) / 3); */
+  width: calc((100% - 60px) / 3);
+}
+
+.filter-search > .border {
+  border: 1px solid #eeeeee;
 }
 
 .result-search > .filter-search:not(:nth-child(3n)) {
